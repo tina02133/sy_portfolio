@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIYEON Portfolio</title>
+    <!-- main.css import -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- font-awsome cdn -->
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+</head>
+
+<body>
+    <!-- navbar 포함 aboutme 페이지가 스크롤 없이 100vw 에 맞추기 위한 div -->
+    <div class="first">
+        <!--==================header=======================-->
+        <header>
+            <!-- 로고 -->
+            <h1>SY Portfolio</h1>
+            <!--navbar-->
+            <nav class="nav">
+                <ul>
+                    <li class="aboutMe-btn" id="aboutMe-btn">About Me</li>
+                    <li class="skills-btn" id="skills-btn">Skills</li>
+                    <li class="portfolio-btn" id="portfolio-btn">Portfolio</li>
+                    <li class="contactMe-btn" id="contactMe-btn">Contact Me</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ================header끝=======================-->
+        <!-- ===============Slogon==========================-->
+        <div class="test">
+            <div class="menu-box">
+                <ul>
+                    <li class="aboutMe-btn">About Me</li>
+                    <li class="skills-btn">Skills</li>
+                    <li class="portfolio-btn">Portfolio</li>
+                    <li class="contactMe-btn">Contact Me</li>
+                </ul>
+            </div>
+            <div class="mainSlogon">
+                <!-- 육각형 튜브 애니메이션 -->
+                <div class="parent">
+                    <div class="squre">
+                        <div class="squareface squarefacefront">Click</div>
+                        <div class="squareface squarefaceback">Click</div>
+                        <div class="squareface squarefaceright">Click</div>
+                        <div class="squareface squarefaceleft">Click</div>
+                        <div class="squareface squarefacetop">Click</div>
+                        <div class="squareface squarefacebottom">Click</div>
+                    </div>
+                </div>
+                <div class="slogon">
+                    <p class="slogon-first">Do Not</p><span class="slogon-third">Square</span>
+                    <p class="slogon-second">Me</p>
+                </div>
+            </div>
+            <!-- scrollBtn -->
+            <div class="scrollBtn-box">
+                <button id="scrollBtn">Click</button>
+            </div>
+        </div>
+    </div>
+    <!-- ================== About Me ===============================-->
+    <div class="aboutMe">
+        <!-- profile-box -->
+        <div class="profile-box">
+            <!-- 프로필이미지 -->
+            <!-- 360 회전 애니메이션 -->
+            <div class="profile-img-box">
+                <div class="back">
+                    <p>성장 가능성이 무한한<br />주니어 개발자 임시연입니다.</p>
+                </div>
+                <img class="front" src="profile.jpg">
+            </div>
+            <!-- 프로필 텍스트 -->
+            <div class="profile-text-box">
+                <div class="intro-one">
+                    <p>안녕하세요!<br />
+                        <span style="color: pink;">무한한 성장 가능성에 가슴이 두근 거리는 임시연</span>입니다.<br />
+                        사용자를 놀라게 할 UI/UX와 가치 있는 서비스를 만들며<br />성장해나가는 것이 꿈입니다.
+                    </p>
+                    <hr>
+                </div>
+                <div class="intro-two">
+                    <!-- ==> 정보 div1 -->
+                    <div>
+                        <h3 style="color: pink;">임시연</h3>
+                        <p>- 1998.02.13 (26세)</p>
+                        <p>- 북경 인민대학교 중어중문과(2016.06 졸업)</p>
+                    </div>
+                    <!-- ==> 정보 div2 -->
+                    <div>
+                        <h3 style="color: pink;">교육 Education</h3>
+                        <p>- 실무 프로젝트 기반 빅데이터 서비스 솔루션 양성 과정(Java 웹개발 22.6.27~23.1.17)</p>
+                        <h3 style="color: pink;">자격증 Certificate</h3>
+                        <p>- 정보처리기사(필기) 합격 (2023.03) </p>
+                        <p>- 컴퓨터활용능력 2급 합격 (2020.08) </p>
+                        <p>- OPIC IH 등급 (2021.12) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================Skills====================================== -->
+    <div class="skills">
+        <!-- skills-box -->
+        <div class="skills-box">
+            <div class="skills-box-one">
+                <h2>Front-End</h2>
+                <hr>
+                <h3>HTML / CSS</h3>
+                <progress max="100" value="80" id="html-css"></progress>
+                <p>HTML5 & CSS3의 구조과 기본 문법에 대해 숙지하고 있습니다.</p>
+                <h3>JavaScript</h3>
+                <progress max="100" value="80" id="javascript"></progress>
+                <p>객체 지향 스크립트에 대해 이해하고 있으며,
+                    웹사이트의 동적인 구조 및 요소를 추가하는 법을 알고 있습니다.</p>
+                <h3>React.JS</h3>
+                <progress max="100" value="60" id="react"></progress>
+                <p>React.js 기반 개인 쇼핑몰 프로젝트를 진행한 경험이 있습니다.
+                    Component 및 Router구조와 JSX, Props, State, Redux 문법을 숙지하고 있으며 상황에 맞게 적절히 사용할 수 있습니다.</p>
+                <h3>Vue.JS</h3>
+                <progress max="100" value="60" id="react"></progress>
+                <p>React.js 기반 개인 쇼핑몰 프로젝트를 진행한 경험이 있습니다.
+                    Component 및 Router구조와 JSX, Props, State, Redux 문법을 숙지하고 있으며 상황에 맞게 적절히 사용할 수 있습니다.</p>
+            </div>
+            <div class="skills-box-two">
+                <h2>Server & DataBase</h2>
+                <hr>
+                <h3>Java</h3>
+                <progress max="100" value="60" id="java"></progress>
+                <p>Java 기반 웹 어플리케이션 팀 프로젝트를 진행한 경험이 있으며,
+                    객체 지향 프로그래밍에 대해 이해하고 있습니다.
+                    Java 에서 제공하는 클래스와 메소드를 적절하게 사용할 수 있습니다.</p>
+                <h3>Oracle</h3>
+                <progress max="100" value="60" id="oracle-sql"></progress>
+                <p>Oracle Database와 sql 쿼리를 활용하여 관계형 데이터베이스를 만들고 관리해 본 경험이 있습니다.</p>
+            </div>
+            <div class="skills-box-four">
+                <h2>SMC</h2>
+                <hr>
+                <h3>Git / GitHub / GitKraken</h3>
+                <progress max="100" value="70" id="git"></progress>
+                <p>버전 관리 및 협업 툴을 사용하여 팀 및 개인 프로젝트를 관리해본 경험이 있습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================Portfolio====================================== -->
+    <div class="portfolio">
+        <!-- 우측 포트폴리오 박스 -->
+        <div class="portfolio-box">
+            <!--Portfolio Menu  -->
+            <div class="portfolio-menu">
+                <div class="menu menu-one menu-one-hover">
+                    <h1>PerSonal & Team Project</h1>
+                    <p style="color: aliceblue;">각 카드를 클릭하면 상세페이지로 이동합니다.</p>
+                    <hr>
+                </div>
+            </div>
+            <!-- ==> 프로젝트 박스 -->
+            <div class="project">
+                <!-- ==> flavo-->
+                <div class="project-box project-reactShop ">
+                    <!-- 마우스 hover용 div -->
+                    <div class="hover">
+                        <h3>React.JS 기반<br /> 개인 쇼핑몰 프로젝트</h3>
+                        <br />
+                        <a href="https://tina02133.github.io/flavo/"><button>사이트 바로가기</button></a><br/>
+                        <a href="https://flaxen-lemonade-44b.notion.site/Flavo-React-JS-2549107e956a453eaf34086ab35be0b6?pvs=4"><button>프로젝트
+                            상세 보기</button></a>
+                    </div>
+                </div>
+                <!-- ==> 블로그 프로젝트-->
+                <div class="project-box blog">
+                    <!-- 마우스 hover용 div -->
+                    <div class="hover">
+                        <h3>Vue.JS 기반<br /> 개인 블로그 프로젝트</h3>
+                        <br />
+                        <a href="https://tina02133.github.io/syLog/"><button>사이트 바로가기</button></a><br/>
+                        <a href="https://flaxen-lemonade-44b.notion.site/Vue-JS-3c28c92f5c614a2c8e13920b6ec49a2c?pvs=4"><button>프로젝트
+                                상세 보기</button></a>
+                    </div>
+                </div>
+
+                <!-- 반응형 웹-->
+                <div class="project-box project-landing">
+                    <!-- 마우스 hover용 div -->
+                    <div class="hover">
+                        <h3>반응형 웹을 고려한<br />랜딩페이지</h3>
+                        <br />
+                        <a href="https://tina02133.github.io/landingPage/"><button>사이트 바로가기</button></a><br/>
+                        <a href="https://flaxen-lemonade-44b.notion.site/LandingPage-49251b56ba6a4cf9a7b7345514cf1f1c?pvs=4"><button>프로젝트
+                                상세 보기</button></a>
+                    </div>
+                </div>
+
+                <!-- 끼리끼니 -->    
+                <div class="project-box project-team">
+                    <div class="hover">
+                        <h3>Java 기반<br />식사모임 매칭 웹 팀 프로젝트</h3>
+                        <br />
+                        <a
+                            href="https://flaxen-lemonade-44b.notion.site/Java-Team-Project-67923db3196440feb95f5bf11d18f46b?pvs=4"><button>프로젝트
+                                상세 보기</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================Contact Me================================== -->
+    <div class="contactMe">
+
+        <!-- contactMe-box -->
+        <div class="contactMe-box">
+            <div>
+                <h2><i class="fa-solid fa-phone"></i> Contact</h2>
+                <p>phone : 010.3682.4802</p>
+                <p>E-mail : tina980213@gmail.com</p>
+                <p>GitHub : 010.3682.4802</p>
+            </div>
+            <div>
+                <h2><i class="fa-solid fa-earth-americas"></i> Address</h2>
+                <p>Address : 서울특별시 양천구 목동</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================JavaScript========================== -->
+    <script>
+        // square 클릭하면 square 좌측으로 이동 후 'Do Not Square Me'글씨 보이게 하기 
+        $('.parent').click(function () {
+            $('.parent').css('transform', 'translateX(-250px)');
+            // sqaure 가 밀리고 , 1초 뒤 글씨 실행
+            setTimeout(function () {
+                $('.slogon-first').css({ 'animation': 'fadein 2s', 'opacity': '1' });
+                $('.slogon-second').css({ 'animation': 'fadein 2s', 'opacity': '1' });
+            }, 1000);
+            setTimeout(function () {
+                $('.slogon-third').css({ 'animation': 'fadein 2s', 'opacity': '1' });
+            }, 2000);
+            setTimeout(function () {
+                $('.scrollBtn-box').css('display', 'block');
+            }, 2500);
+        })
+
+        //==============================> 상단메뉴 클릭 시 해당 페이지로 스크롤 내리기
+        document.addEventListener('click', function (event) {
+            // console.log(event.target.id);
+            var menuClick = event.target.id;
+            if (menuClick == "portfolio-btn") {
+                window.scrollTo({ top: 2130, left: 0, behavior: 'smooth' });
+            } else if (menuClick == "skills-btn") {
+                window.scrollTo({ top: 1500, left: 0, behavior: 'smooth' });
+            } else if (menuClick == "contactMe-btn") {
+                window.scrollTo({ top: 2504, left: 0, behavior: 'smooth' });
+            } else if (menuClick == "aboutMe-btn" || menuClick == "scrollBtn") {
+                window.scrollTo({ top: 711, left: 0, behavior: 'smooth' });
+            }
+        })
+
+        // 스크롤 위치에 따라 좌측 메뉴 opacity, color변형되도록 
+        // Skills페이지에 스크롤 도달 시 opacity 로 서서히 보여지도록
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+            console.log(top);
+            if (top < 300 || top > 2400) {
+                $('.menu-box').css('opacity', 0);
+            }
+            else if (top > 380 && top < 1000) {
+                $('.menu-box').css('opacity', 1);
+                $('.aboutMe-btn').css('color', '#A6216d')
+                $('.skills-btn').css('color', 'white')
+                $('.portfolio-btn').css('color', 'white')
+            }
+            else if (top > 1000 && top < 1800) {
+                $('.menu-box').css('opacity', 1);
+                $('.skills-btn').css('color', '#A6216d')
+                $('.aboutMe-btn').css('color', 'white')
+                $('.portfolio-btn').css('color', 'white')
+
+            }
+            else if (top > 1800 && top < 2500) {
+                $('.menu-box').css('opacity', 1);
+                $('.portfolio-btn').css('color', '#A6216d')
+                $('.skills-btn').css('color', 'white')
+                $('.aboutMe-btn').css('color', 'white')
+            }
+
+            // opacity
+            // 700에서 0 1400에서 1
+            // 0=a*700+b, 1=a*1400+b
+            // a = 1/700,b = -1
+            var y = 1 / 700 * top - 1;
+            $('.skills-box').css('opacity', y);
+
+            // scale
+            // a = 1/1400,b = 0
+            var z = 1 / 1400 * top + 0;
+            $('.skills-box').css('transform', `scale( ${z} )`);
+
+        })
+
+        // portfolio menu Team 에 마우스 hover 시 Personal 메뉴 .munu-one 클래스 없애라
+        // $('.menu-two').mouseover(function () {
+        //     $('.menu-one').removeClass("menu-one-hover");
+        // })
+        // // menu-one 에 마우스 hover 시 다시 배경색 생기도록 addClass
+        // $('.menu-one').mouseover(function () {
+        //     $('.menu-one').addClass("menu-one-hover");
+        // })
+        // $('.menu-two').click(function () {
+        //     $('.project').css('transform', 'translateX(-80vw)');
+        // })
+        // $('.menu-one').click(function () {
+        //     $('.project').css('transform', 'translateX(0vw)');
+        // })
+    </script>
+
+</body>
+
+</html>
