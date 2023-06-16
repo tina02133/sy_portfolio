@@ -369,6 +369,7 @@ ul li:hover {
 .skills-box {
     margin-left: 100px;
     display: flex;
+    margin-bottom: 100px;
 }
 
 /* 각각의  skill box */
@@ -387,8 +388,8 @@ ul li:hover {
     padding: 20px;
 }
 
-.skills-box div h2{
-    color: black;
+.skills-box div h1,h3{
+    color: pink;
 }
 
 /* 해당 클래스의 2번째부터~모든 자식요소를 선택 */
@@ -426,7 +427,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: rgba(166, 33, 109, 0.9);
+    background-color: grey;
 }
 
 
@@ -460,8 +461,7 @@ progress::-webkit-progress-value {
 
 .menu-one-hover {
     color: bisque;
-    /* background-color: rgba(255,0,0,0.5); */
-    /* transition: all 1s ease; */
+
 }
 
 
